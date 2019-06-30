@@ -9,15 +9,32 @@
 import SwiftUI
 
 struct WatchDetail : View {
+    let watch: Watch
+    @State private var zoomed = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Movement: \(watch.movement)")
+                .font(.title)
+                .padding(.top)
+            Text("Accuracy: \(watch.accuracy)")
+                .font(.title)
+            Image(watch.imageName)
+                .resizable()
+                .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                .navigationBarTitle(Text(watch.name), displayMode: .inline)
+                .tapAction {
+                    withAnimation { self.zoomed.toggle() }
+                }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        }
     }
 }
 
 #if DEBUG
 struct WatchDetail_Previews : PreviewProvider {
     static var previews: some View {
-        WatchDetail()
+        NavigationView { WatchDetail(watch: testData[0]) }
     }
 }
 #endif

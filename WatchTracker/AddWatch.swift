@@ -9,8 +9,27 @@
 import SwiftUI
 
 struct AddWatch : View {
+    @ObjectBinding var store = WatchStore()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+            Form {
+                Section {
+                    Text("Name")
+                    Text("Movement")
+                    Text("Reference")
+                }
+                
+                Section {
+                    Button(action: addWatch) {
+                        Text("Add Watch")
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Add a Watch"), displayMode: .inline)
+    }
+    
+    func addWatch() {
+        store.watches.append(Watch(name: "Seiko SNK809", movement: "7S26", accuracy: 7))
     }
 }
 

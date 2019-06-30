@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3086A4622C7115400932F24 /* WatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3086A4522C7115400932F24 /* WatchStore.swift */; };
+		F358AF9F22C7FF000087F4E5 /* AddWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358AF9E22C7FF000087F4E5 /* AddWatch.swift */; };
 		F36245FE22C6F90300A284A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36245FD22C6F90300A284A2 /* AppDelegate.swift */; };
 		F362460022C6F90300A284A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36245FF22C6F90300A284A2 /* SceneDelegate.swift */; };
 		F362460322C6F90300A284A2 /* WatchTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F362460122C6F90300A284A2 /* WatchTracker.xcdatamodeld */; };
@@ -14,9 +16,13 @@
 		F362460722C6F90900A284A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362460622C6F90900A284A2 /* Assets.xcassets */; };
 		F362460A22C6F90900A284A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362460922C6F90900A284A2 /* Preview Assets.xcassets */; };
 		F362460D22C6F90900A284A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362460B22C6F90900A284A2 /* LaunchScreen.storyboard */; };
+		F362461522C6FA1000A284A2 /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362461422C6FA1000A284A2 /* Watch.swift */; };
+		F362461722C6FF3C00A284A2 /* WatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362461622C6FF3C00A284A2 /* WatchDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3086A4522C7115400932F24 /* WatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStore.swift; sourceTree = "<group>"; };
+		F358AF9E22C7FF000087F4E5 /* AddWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWatch.swift; sourceTree = "<group>"; };
 		F36245FA22C6F90300A284A2 /* WatchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36245FD22C6F90300A284A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F36245FF22C6F90300A284A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		F362460922C6F90900A284A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F362460C22C6F90900A284A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F362460E22C6F90900A284A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362461422C6FA1000A284A2 /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
+		F362461622C6FF3C00A284A2 /* WatchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +69,15 @@
 				F36245FD22C6F90300A284A2 /* AppDelegate.swift */,
 				F36245FF22C6F90300A284A2 /* SceneDelegate.swift */,
 				F362460422C6F90300A284A2 /* ContentView.swift */,
+				F358AF9E22C7FF000087F4E5 /* AddWatch.swift */,
+				F362461622C6FF3C00A284A2 /* WatchDetail.swift */,
 				F362460622C6F90900A284A2 /* Assets.xcassets */,
 				F362460B22C6F90900A284A2 /* LaunchScreen.storyboard */,
 				F362460E22C6F90900A284A2 /* Info.plist */,
 				F362460122C6F90300A284A2 /* WatchTracker.xcdatamodeld */,
 				F362460822C6F90900A284A2 /* Preview Content */,
+				F362461422C6FA1000A284A2 /* Watch.swift */,
+				F3086A4522C7115400932F24 /* WatchStore.swift */,
 			);
 			path = WatchTracker;
 			sourceTree = "<group>";
@@ -150,8 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36245FE22C6F90300A284A2 /* AppDelegate.swift in Sources */,
+				F358AF9F22C7FF000087F4E5 /* AddWatch.swift in Sources */,
 				F362460022C6F90300A284A2 /* SceneDelegate.swift in Sources */,
 				F362460522C6F90300A284A2 /* ContentView.swift in Sources */,
+				F362461522C6FA1000A284A2 /* Watch.swift in Sources */,
+				F3086A4622C7115400932F24 /* WatchStore.swift in Sources */,
+				F362461722C6FF3C00A284A2 /* WatchDetail.swift in Sources */,
 				F362460322C6F90300A284A2 /* WatchTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
